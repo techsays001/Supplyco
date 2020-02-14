@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.msg91.sendotp.sample">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permision.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name=".Employassign"></activity>
+        <activity android:name=".Employaddadmin" />
+        <activity android:name=".Reshencard" />
+        <activity android:name=".Vechilepayment" />
+        <activity android:name=".Packegeadd" />
+        <activity android:name=".Addrequset" />
+        <activity android:name=".Request" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/MyMaterialTheme.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".MainActivityforgot" />
+        <activity android:name=".VerificationActivityforgot" />
+        <activity android:name=".Resetpass" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Purchaseconfirm" />
+        <activity android:name=".Admin_home" />
+        <activity android:name=".Signinnurse" />
+        <activity android:name=".Registrationuser" />
+        <activity android:name=".Resetpassadmin" />
+        <activity android:name=".regtwouser" />
+        <activity android:name=".Subsudypayment" />
+        <activity android:name=".Signinadmin" />
+        <activity android:name=".Admin_login" />
+        <activity android:name=".Registrationemp" />
+        <activity android:name=".MainActivityhomeemp" />
+        <activity android:name=".Signin" />
+        <activity android:name=".Registration" />
+        <activity android:name=".regtwo" />
+        <activity android:name=".MainActivityemp" />
+        <activity android:name=".regtwoemp" />
+        <activity android:name=".VerificationActivityemp" />
+        <activity android:name=".Eventok" />
+        <activity android:name=".VerificationActivityforgotnurse" />
+        <activity android:name=".MainActivitynuse" />
+        <activity android:name=".regtwonurse" />
+        <activity android:name=".Resetpassnurse" />
+        <activity android:name=".MainActivityhome" />
+        <activity android:name=".Registrationnurse" />
+        <activity android:name=".VerificationActivitynurse" />
+        <activity android:name=".MainActivityforgotnuse" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_ccCLHM5IY50Xe1" />
+        <meta-data
+            android:name="sendotp.key"
+            android:value="@string/sendotp_key" />
+    </application>
+
+</manifest>

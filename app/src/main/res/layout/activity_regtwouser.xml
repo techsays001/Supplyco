@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    tools:context=".regtwo"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registration_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="REGISTRATION"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingTop="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgview123"
+                        android:layout_width="140dp"
+                        android:layout_height="152dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/cr"
+                        android:src="@drawable/pic"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.572" />
+
+                    <TextView
+                        android:id="@+id/nametxt7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:text="Upload Images"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nametxt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gendre"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/gender123"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:background="@drawable/spiner1"
+                        android:drawableStart="@drawable/enter"
+                        android:drawableLeft="@drawable/enter"
+                        android:ems="15"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nametxt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="District"
+
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/room123"
+                        android:layout_width="329dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/spiner1"
+                        android:drawableStart="@drawable/enter"
+                        android:drawableLeft="@drawable/enter"
+                        android:ems="10"
+
+                        android:inputType="textPersonName"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:id="@+id/nametxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Your Password"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/pass123"
+                        android:layout_width="329dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/spiner1"
+                        android:drawableStart="@drawable/pass"
+                        android:drawableLeft="@drawable/pass"
+                        android:ems="10"
+
+                        android:inputType="textPassword"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="88dp"
+                        android:layout_height="20dp"
+                        android:text="Show"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.173"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.537" />
+
+                    <TextView
+                        android:id="@+id/nametxt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirom Your Password"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/cpass123"
+                        android:layout_width="329dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/spiner1"
+                        android:drawableStart="@drawable/pass"
+                        android:drawableLeft="@drawable/pass"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:padding="8dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="79dp"
+                        android:layout_height="20dp"
+                        android:text="Show"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.173"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.537" />
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/register_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="16dp"
+                        android:onClick="registerButtonf"
+
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="8dp">
+
+                        <Button
+                            android:id="@+id/register_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btnnnn"
+                            android:ems="15"
+                            android:onClick="registerButtonf"
+                            android:text="Register"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/already_have_account_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
